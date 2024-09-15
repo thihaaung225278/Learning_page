@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Learning | DBS Bank</title>
+
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <!-- ? CSS -->
+    <link rel="stylesheet" href="./public/css/vendor/uikit.min.css">
+    <link rel="stylesheet" href="./public/css/vendor/swiper.min.css">
+    <link rel="stylesheet" href="./style.css" />
+    <!-- SASS -->
+
+    <!-- ? JS -->
+    <!-- ? JS -->
+    <script src="public/js/spbase/jquery-3.4.1.min.js"></script>
+
+    <script src="public/js/vendor/uikit.min.js"></script>
+    <script src="public/js/vendor/uikit-icons.min.js"></script>
+    <script src="public/js/vendor/swiper.min.js"></script>
+    <script src="public/js/vendor/moment.min.js"></script>
+    <script src="public/js/vendor/swfobject.js"></script>
+    <script src="public/js/vendor/jquery.FileReader.min.js"></script>
+    <script src="public/js/vendor/kendo.ui.core.min.js"></script>
+
+    <!-- static.js -->
+    <script src="public/js/static.js"></script>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TG6D8PF');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body class="playbook learning" data-path="root" data-mtj-page="playbook" data-nav="resources"></body>
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG6D8PF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+<div class="header">
+    <div class="header-container uk-container">
+        <div class="navbar" data-render="navbar">
+            <!-- component -->
+        </div>
+        <!-- <div class="spotlight-navigation">
+            <span><a>Resources</a></span> <span uk-icon="icon: chevron-right;"></span> <span class="x-text">Playbook</span>
+        </div> -->
+    </div>
+</div>
+
+<div class="pb-banner">
+    <!-- <img class="pb-banner-hexagon hexagon-1" src="public/images/playbook-hexagon-1.png" alt="Graphic">
+    <img class="pb-banner-hexagon hexagon-2" src="public/images/playbook-hexagon-2.png" alt="Graphic"> -->
+    <img src="public/images/learning/right-shape-1.svg" alt="" class="right-shape-1">
+    <img src="public/images/learning/left-shape-1.svg" alt="" class="left-shape-1">
+    <img src="public/images/learning/left-shape-2.svg" alt="" class="left-shape-2">
+    <div>
+        <h1>Learn all about <br> the 9 Mtj elements here</h1>
+    </div>
+</div>
+
+<section class="pb-main learning-main uk-position-relative">
+
+    <img src="public/images/learning/right-shape-4.svg" alt="" class="right-shape-4">
+
+    <div class="uk-container learning-content-container-wrapper">
+
+        <img src="public/images/learning/left-shape-3.svg" alt="" class="left-shape-3">
+        <img src="public/images/learning/left-shape-4.svg" alt="" class="left-shape-4">
+
+        <img src="public/images/learning/right-shape-2.svg" alt="" class="right-shape-2">
+        <img src="public/images/learning/right-shape-3.svg" alt="" class="right-shape-3">
+
+        <!-- ****** -->
+        <!-- filter -->
+        <!-- ****** -->
+        <div id="offcanvas-filter" uk-offcanvas="flip: true; overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close uk-hidden" type="button" uk-close></button>
+
+                <h3>MtJ Elements</h3>
+
+                <ul id="filter-links-wrapper">
+                    <!-- js render -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- tab btns -->
+        <div class="tab-btn-wrapper">
+            <div class="tab-btn">
+                <input type="radio" name="tab-btn" data-tab="all-data" id="all-data" value="" checked>
+                <label for="all-data">
+                    <span class="text">All</span>
+                    <span class="image">
+                        <img src="public/images/learning/all-icon.svg" alt="">
+                    </span>
+                </label>
+            </div>
+            <div class="tab-btn">
+                <input type="radio" name="tab-btn" data-tab="core-data" id="core-data" value="core-data">
+                <label for="core-data">
+                    <span class="text">core</span>
+                    <span class="image">
+                        <img src="public/images/learning/core-icon.svg" alt="">
+                    </span>
+                </label>
+            </div>
+            <div class="tab-btn">
+                <input type="radio" name="tab-btn" data-tab="elective-data" id="elective-data" value="elective-data">
+                <label for="elective-data">
+                    <span class="text">elective</span>
+                    <span class="image">
+                        <img src="public/images/learning/elective-icon.svg" alt="">
+                    </span>
+                </label>
+            </div>
+            
+            <div class="filter-btn-div">
+                <button class="filter-btn uk-hidden" type="button" uk-toggle="target: #offcanvas-filter">
+                    <span class="text">Filter</span>
+                    <span class="img">
+                        <img src="public/images/learning/filter-icon.svg" alt="">
+                    </span>
+                </button>
+                
+            </div>
+        </div>
+
+        <!-- tab contents -->
+        <div class="tab-content-wrapper">
+            <!-- core -->
+            <a href="#" class="tab-content" data-tab-content="core-data" data-text="Fundamental, Value Map & Control Tower,  Performance Cells, Performance Management Architecture(PMA)">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Kickstart (Part 1) - Fundamental(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                                <span class="category">Mandatory</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="tab-content" data-tab-content="core-data" data-text="Value Map & Control Tower">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Kickstart (Part 1) - Value Map & Control Tower(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+            <div class="tab-content" data-tab-content="core-data" data-text="Performance Cells">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Performance Cells(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="core-data" data-text="Customer Obsession">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Customer Obsession(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="core-data" data-text="Artificial Intelligence / Machine Learning">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Artificial Intelligence / Machine Learning(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="core-data" data-text="Workflow Workbench">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Workflow Workbench(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="core-data" data-text="Innovation">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Innovation(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="core-data" data-text="Experimentation">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Experimentation(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="core-data" data-text="Performance Management Architecture">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Performance Management Architecture(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="core-data" data-text="Performance Development & Compensation">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Performance Development & Compensation(core)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- core -->
+            <!-- <div class="tab-content" data-tab-content="elective-data" data-text="Elective">
+                <h2>elective</h2>
+                <h3>Elective</h3>
+            </div> -->
+            <div class="tab-content" data-tab-content="elective-data" data-text="Customer Obsession, Experimentation, Supplementary">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Customer Obsession(elective)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="elective-data" data-text="Experimentation">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Experimentation(elective)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" data-tab-content="elective-data" data-text="Supplementary">
+                <div class="learning-card">
+                    <div class="contents">
+                        <h3>Supplementary(elective)</h3>
+                        <p>
+                            MtJ provides a structured approach to identify and overcome obstacles, foster collaboration, and drive continuous improvement within DBS. This course introduces the principles of MtJ and its foundational elements.
+                        </p>
+                    </div>
+                    <div class="icons-and-datas">
+                        <div class="members-div">
+                            <div class="icon">
+                                <img src="public/images/learning/members-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                <span class="new-join">MtJ new joiners</span>
+                                <span class="type">Refreshers</span>
+                            </div>
+                        </div>
+                        <div class="member-div">
+                            <div class="icon">
+                                <img src="public/images/learning/member-icon.svg" alt="">
+                            </div>
+                            <div class="text-contents">
+                                e-learning
+                            </div>
+                        </div>
+                        <div class="time-div">
+                            <div class="icon">
+                                <img src="public/images/learning/clock-icon.svg" alt="">
+                            </div>
+                            <div class="time">
+                                30 mins
+                            </div>
+                        </div>
+                        <div class="tags-div">
+                            <div class="icon">
+                                <img src="public/images/learning/tag-icon.svg" alt="">
+                            </div>
+                            <div class="tag-wrapper">
+                                <span class="tag">TBD</span>
+                                <span class="tag">Customer Oriented</span>
+                                <span class="tag">Customer Journey Mapping</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+
+    </div>
+</section>
+
+
+<footer class="root-footer" data-render="footer"></footer>
+
+<!-- <footer data-render="footer-black-theme"></footer> -->
+
+<!-- register popup render -->
+<div id="register-popup" class="uk-flex-top" uk-modal="esc-close: false; bg-close: false;"></div>
+
+
+
+<script src="public/js/spbase/jquery.SPServices.min.js"></script>
+<script src="public/js/spbase/config.js"></script>
+<script src="public/js/spbase/sprestlib-php.js"></script>
+<script src="public/js/lib/users.js"></script>
+<script src="public/js/lib/actions.js"></script>
+<script src="public/js/lib/features.js"></script>
+
+<script src="public/js/component.js"></script>
+
+<script src="public/js/script.js"></script>
+
+<script src="public/js/controller/common-controller.js"></script>
+<script src="public/js/common.js"></script>
+<script src="public/js/controller/learning-controller.js"></script>
+
+<script src="widget/assets/mtj-widget-config.js"></script>
+
+
+</body>
+
+</html>
